@@ -1,99 +1,114 @@
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
+
 body,
 button,
 input,
 select,
 textarea {
-  font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+    font: 12px/1.5 arial, tahoma, \5b8b\4f53;
 }
+
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 html,
 body {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
+
 html header,
 body header {
-  height: 100px;
-  background-color: white;
+    height: 100px;
+    background-color: white;
 }
+
 html header header,
 body header header {
-  width: 973px;
-  height: 100px;
-  margin: 0 auto;
+    width: 973px;
+    height: 100px;
+    margin: 0 auto;
 }
+
 html header header .logo,
 body header header .logo {
-  float: left;
-  height: 100%;
-  width: 189px;
-  background: url(../img/img-6.png) center no-repeat;
+    float: left;
+    height: 100%;
+    width: 189px;
+    background: url(../img/denglu/img-6.png) center no-repeat;
 }
+
 html header header #prompt,
 body header header #prompt {
-  float: left;
-  color: #333;
-  background: #fefff1;
-  border: 1px solid #fecd66;
-  line-height: 16px;
-  padding: 4px 6px;
-  margin-left: 16px;
-  margin-top: 36px;
+    float: left;
+    color: #333;
+    background: #fefff1;
+    border: 1px solid #fecd66;
+    line-height: 16px;
+    padding: 4px 6px;
+    margin-left: 16px;
+    margin-top: 36px;
 }
+
 html header header #prompt a span,
 body header header #prompt a span {
-  color: #f60;
+    color: #f60;
 }
+
 html header header .advice,
 body header header .advice {
-  float: right;
-  margin-top: 10px;
-  color: #333;
+    float: right;
+    margin-top: 10px;
+    color: #333;
 }
+
 html header header .advice span,
 body header header .advice span {
-  float: left;
-  width: 18px;
-  height: 18px;
-  margin-right: 10px;
-  background: url(../img/img-8.png) -67px -27px no-repeat;
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    background: url(../img/denglu/img-8.png) -67px -27px no-repeat;
 }
+
 html header header .advice:hover,
 body header header .advice:hover {
-  color: #f60;
+    color: #f60;
 }
+
 html section,
 body section {
-  height: 570px;
-  background: url(../img/img-2.jpg) center no-repeat;
+    height: 570px;
+    background: url(../img/denglu/img-2.jpg) center no-repeat;
 }
+
 html section .logo-2,
 body section .logo-2 {
-  height: 570px;
-  width: 570px;
-  display: block;
-  position: absolute;
-  left: 190px;
+    height: 570px;
+    width: 570px;
+    display: block;
+    position: absolute;
+    left: 190px;
 }
+
 html section .login-form,
 body section .login-form {
-  position: absolute;
-  right: 200px;
-  width: 360px;
-  height: 410px;
-  margin-top: 50px;
-  background: #fff;
-  box-shadow: 0 0 2px #ececec;
-  font-family: "Microsoft Yahei";
+    position: absolute;
+    right: 200px;
+    width: 360px;
+    height: 410px;
+    margin-top: 50px;
+    background: #fff;
+    box-shadow: 0 0 2px #ececec;
+    font-family: "Microsoft Yahei";
 }
+
 html footer,
 body footer {
-  height: 200px;
-  background-color: red;
+    height: 200px;
+    background-color: red;
 }
