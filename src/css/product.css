@@ -1,0 +1,463 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB";
+  -webkit-font-smoothing: antialiased;
+}
+body,
+html {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header #ng-top {
+  height: 36px;
+  width: 100%;
+  background-color: #e5e5e5;
+  color: #666;
+}
+header #ng-top #ng-top-inner {
+  width: 1191px;
+  margin-left: 88px;
+  overflow: hidden;
+}
+header #ng-top #ng-top-inner li {
+  width: 85px;
+  float: left;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+header #ng-top #ng-top-inner li.cursor-style {
+  cursor: default;
+}
+header #ng-top #ng-top-inner #ng-top-lf {
+  height: 36px;
+  float: left;
+}
+header #ng-top #ng-top-inner #ng-top-rt {
+  height: 36px;
+  float: right;
+}
+header #ng-top #ng-top-inner #ng-top-rt .li-red {
+  color: #f60;
+}
+header .g-header-wrapper {
+  background: #fff;
+  font: 12px/1.5 arial, tahoma, \5b8b\4f53;
+  font-family: '微软雅黑';
+}
+header .g-header-wrapper input:focus {
+  outline: none;
+}
+header .g-header-wrapper .g-header {
+  height: 90px;
+  border-bottom: 1px solid #DDD;
+  width: 100%;
+  min-width: 990px;
+}
+header .g-header-wrapper .g-header .wrapper2 {
+  width: 1300px!important;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search {
+  width: 545px !important;
+  z-index: 14!important;
+  height: 56px;
+  margin-right: 0;
+  margin-top: 26px;
+  position: relative;
+  float: right;
+  margin: 30px 0 0 0;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search .search-inner {
+  width: 550px;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search .clearfix {
+  zoom: 1;
+  float: left;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search .search-keyword {
+  width: 354px;
+  padding: 7px 5px;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search .search-keyword-yg {
+  border: 2px solid #ffbc35;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search .search-btn {
+  display: inline-block;
+  font-weight: 700;
+  width: 79px;
+  height: 36px;
+  line-height: 36px;
+  background: #ffbc35;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Microsoft YaHei';
+  text-indent: 2px;
+  border: 0;
+  cursor: pointer;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search .searchstore-btn {
+  background: #444;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+header .g-header-wrapper .g-header .wrapper2 .g-search-hotwords {
+  margin-top: 3px;
+  float: none;
+}
+header .g-header-wrapper .g-header .g-logo {
+  width: 190px;
+  height: 60px;
+  float: left;
+  overflow: hidden;
+  margin: 15px 20px 0 0;
+  padding-right: 20px;
+  border-right: 1px solid #EEE;
+}
+header .g-header-wrapper .g-header .g-logo a {
+  display: block;
+  width: 190px;
+  height: 60px;
+  overflow: hidden;
+  margin-top: 0;
+}
+header .g-header-wrapper .g-header .g-logo a img {
+  margin-top: -20px;
+}
+header .g-header-wrapper .g-header .storname {
+  max-width: 415px;
+  font-family: '微软雅黑';
+}
+header .g-header-wrapper .g-header .storname .changeh3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  height: 20px;
+  overflow: hidden;
+  line-height: 20px;
+  font-weight: 700;
+  color: #666;
+}
+header .g-header-wrapper .g-header .storname .changeh3::after {
+  content: "";
+  display: table;
+  height: 0;
+  overflow: hidden;
+  zoom: 1;
+  clear: both;
+  visibility: hidden;
+}
+header .g-header-wrapper .g-header .storname .changeh3 i {
+  max-width: 330px;
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+}
+header .g-header-wrapper .g-header .storname .changeh3 .icon_ic {
+  background-position: 0 -519px;
+}
+header .g-header-wrapper .g-header .storname .changeh3 .icon_ic i {
+  background-position: 100% -519px;
+}
+header .g-header-wrapper .g-header .storname .bd {
+  border: none!important;
+}
+header .g-header-wrapper .g-header .storname .store-grade {
+  float: left;
+  padding-bottom: 22px;
+  position: relative;
+  margin-right: 25px;
+  cursor: pointer;
+  z-index: 16;
+}
+header .g-header-wrapper .g-header .storname .store-grade h4 {
+  background-position: 93% -351px;
+}
+header .g-header-wrapper .g-header .storname .store-grade h4 em {
+  margin-left: 8px;
+  padding-right: 4px;
+  font-size: 14px;
+  color: #333;
+  font-family: Arial;
+}
+header .g-header-wrapper .g-header .storname .store-grade h4 em .shop-start-box {
+  display: inline-block;
+}
+header .g-header-wrapper .g-header .storname .store-grade h4 em .shop-start-box .shop-start-full {
+  height: 14px;
+  width: 14px;
+  background: url(//ssr.suning.cn/resource/sfs/project/shopv2/c/common/css/images/icon_fullstar.png) no-repeat center;
+  background-size: 14px 14px;
+  display: inline-block;
+}
+header .g-header-wrapper .g-header .storname .store-grade h4 em img {
+  vertical-align: bottom;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details {
+  display: none;
+  position: absolute;
+  left: -20px;
+  top: 42px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 323px;
+  color: #666;
+  background-color: #fff;
+  cursor: default;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .com-grade {
+  float: left;
+  width: 232px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .com-grade .hd {
+  padding-bottom: 10px;
+  color: #333;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .com-grade .hd .l {
+  float: left;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .com-grade .hd .r {
+  float: right;
+  width: 90px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .com-grade p {
+  line-height: 20px;
+  vertical-align: middle;
+  zoom: 1;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .com-grade p span {
+  float: left;
+  margin-top: 1px;
+  *margin-top: 2px;
+  line-height: 20px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .com-grade p .shop-star-percent {
+  float: right;
+  width: 90px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .store-log {
+  float: right;
+  width: 58px;
+  height: 58px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .clearfix .store-log img {
+  width: 100%;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .store_contact li {
+  padding: 1px 0;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .store_contact li .dt {
+  float: left;
+  width: 60px;
+  line-height: 20px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .store_contact li .dd {
+  float: left;
+  width: 205px;
+  margin-left: 2px;
+  line-height: 20px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .store_contact li .dd .chead_qualification {
+  display: block;
+  width: 25px;
+  height: 19px;
+  background-position: 0 -416px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .store_contact li .dd .zp {
+  background-position: 0 -95px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .store_contact li .dd .com_licence {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: -4px;
+  width: 20px;
+  height: 21px;
+  background-position: 0 -212px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .h-exp {
+  padding: 8px 0 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dotted #dbdbdb;
+  border-left: none;
+  border-right: 0;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .h-exp .btn-exp {
+  display: block;
+  width: 59px;
+  height: 16px;
+  overflow: hidden;
+  background: url(//ssr.suning.cn/resource/sfs/project/shopv2/c/common/css/images/btn-exp.png) no-repeat 0 0;
+  text-decoration: none;
+  text-indent: -9999em;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .ft .btn_home {
+  overflow: hidden;
+  color: black;
+  border-color: #f60;
+  color: #f60;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .ft .btn_collect {
+  margin-left: 20px;
+}
+header .g-header-wrapper .g-header .storname .store-grade .sg-details .ft .btn_good {
+  margin-left: 20px;
+}
+header .g-header-wrapper .g-header .storname .online-sale {
+  float: left;
+  margin-right: 10px;
+  margin-top: 2px;
+  color: #08c;
+  height: 18px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+header .g-header-wrapper .g-header .storname .online-sale img {
+  margin-right: 3px;
+  vertical-align: middle;
+}
+header .g-header-wrapper .g-header .storname .nearby_store {
+  float: left;
+  font-weight: normal;
+  color: #FFF;
+  margin-top: 2px;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+}
+header .banner {
+  position: relative;
+}
+.bodyer {
+  box-sizing: border-box;
+  position: absolute;
+  padding-left: calc((100% - 1000px) / 2);
+  padding-right: calc((100% - 1000px) / 2);
+  top: 296px;
+  width: 100%;
+}
+.bodyer .p-picture {
+  height: 400px;
+  width: 400px;
+  margin-top: 13px;
+  border: 1px solid black;
+  float: left;
+}
+.bodyer .p-picture img {
+  height: 400px;
+  width: 400px;
+  display: block;
+}
+.bodyer .p-title {
+  height: 70px;
+  width: 550px;
+  padding: 13px 10px 12px;
+  float: right;
+}
+.bodyer .p-title h1 {
+  font: 700 16px/1.5 \5FAE\8F6F\96C5\9ED1;
+  color: #222;
+  word-break: break-all;
+  min-height: 24px;
+  text-indent: 2em;
+}
+.bodyer .product-details {
+  width: 550px;
+  padding: 13px 10px 12px;
+  font-family: Arial;
+  float: right;
+}
+.bodyer .product-details .mt {
+  margin: 5px 0;
+}
+.bodyer .product-details .p-price {
+  text-align: center;
+  font: 700 24px/25px Tahoma;
+  height: 30px;
+  color: #e00;
+  background-color: pink;
+  line-height: 30px;
+}
+.bodyer .product-details .p-price .yuan {
+  font-size: 18px;
+  font-family: Arial;
+}
+.bodyer .product-details .p-num {
+  font-size: 16px;
+  font-style: italic;
+}
+.bodyer .product-details #num {
+  border-radius: 7px;
+  box-shadow: 3px 2px 2px red;
+  outline: none;
+  margin-right: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.bodyer .product-details #additem {
+  color: green;
+  font-weight: 600;
+  font-size: 20px;
+}
+.bodyer .product-details .xiangqing {
+  color: orange;
+  display: block;
+}
+.bodyer .product-details #kernelParmeter {
+  margin: 20px 65px;
+}
+.bodyer .product-details #kernelParmeter .hd {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+  background: #f0f0f0;
+}
+.bodyer .product-details #kernelParmeter .hd h4 {
+  float: left;
+  padding-left: 5px;
+}
+.bodyer .product-details #kernelParmeter .hd .opt {
+  float: right;
+  padding-right: 7px;
+}
+.bodyer .product-details #kernelParmeter .hd .opt a {
+  color: #2272c8;
+}
+.bodyer .product-details #kernelParmeter .cnt {
+  padding: 20px 65px;
+  width: 420px;
+  height: 96px;
+  color: #666;
+}
+.bodyer .product-details #kernelParmeter .cnt a {
+  color: #666;
+}
+.bodyer .product-details #kernelParmeter .cnt a:hover {
+  color: #f60;
+}
+.bodyer .product-details #kernelParmeter .cnt li {
+  float: left;
+  width: 200px;
+  height: 20px;
+  margin-bottom: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

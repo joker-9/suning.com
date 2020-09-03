@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>商品详情页</title>
+    <link rel="icon" href="../img/index/img-53.ico">
+    <link rel="stylesheet" href="../css/product.css">
+    <script src="../js/product.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="ng-top">
+            <div id="ng-top-inner">
+                <ul id="ng-top-lf">
+                    <li class="cursor-style">网站导航</li>
+                    <li>商家入驻</li>
+                    <li class="cursor-style">客户服务</li>
+                    <li>杭州</li>
+                </ul>
+                <ul id="ng-top-rt">
+                    <li>请登录</li>
+                    <li class="li-red">注册有礼</li>
+                    <li>我的订单</li>
+                    <li>我的易购</li>
+                    <li>苏宁会员</li>
+                    <li class="li-red">购物车0</li>
+                    <li>易付宝</li>
+                    <li>企业采购</li>
+                    <li>手机苏宁</li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="g-header-wrapper">
+            <div class="g-header ">
+                <div class="wrapper wrapper2">
+                    <div class="g-search" style="z-index: 3;">
+                        <form method="get">
+                            <div class="search-inner clearfix">
+                                <span class="left-sidebar"></span>
+                                <input tabindex="0" id="searchKeywords" type="text" class="search-keyword search-keyword-yg" value="" autocomplete="off" placeholder="输入关键字搜索商品/品牌/店铺">
+                                <input sa-uv="head_searcha" id="searchEbuySubmit" type="button" class="search-btn" value="搜易购" style="padding:0px;letter-spacing: 0px;">
+                                <input sa-uv="head_searchs" id="searchShopSubmit" type="button" class="search-btn searchstore-btn" value="搜本店" style="padding:0px;letter-spacing: 0px;">
+                                <span class="right-sidebar"></span>
+                            </div>
+                            <div class="g-search-hotwords">
+                            </div>
+                            <div id="snKeywordNew" style="display:none"><input type="hidden" id="searchDefaultKeyword" value="" key="" apsclickurl="">
+                                <a name="public0_RSC_月饼_0-500521" target="_blank" sa-data="{'eletp':'hotkeyword'}" href="http://search.suning.com/%E6%9C%88%E9%A5%BC/">月饼</a>
+                                <a name="public0_RSC_月饼礼盒_1-500521" target="_blank" sa-data="{'eletp':'hotkeyword'}" href="http://search.suning.com/%E6%9C%88%E9%A5%BC%E7%A4%BC%E7%9B%92/">月饼礼盒</a>
+                                <a name="public0_RSC_广州酒家月饼_2-500521" target="_blank" sa-data="{'eletp':'hotkeyword'}" href="http://search.suning.com/%E5%B9%BF%E5%B7%9E%E9%85%92%E5%AE%B6%E6%9C%88%E9%A5%BC/">广州酒家月饼</a>
+                                <a name="public0_RSC_中秋礼盒_3-500521" target="_blank" sa-data="{'eletp':'hotkeyword'}" href="http://search.suning.com/%E4%B8%AD%E7%A7%8B%E7%A4%BC%E7%9B%92/">中秋礼盒</a>
+                                <a name="public0_RSC_月饼自营_4-500521" target="_blank" sa-data="{'eletp':'hotkeyword'}" href="http://search.suning.com/%E6%9C%88%E9%A5%BC%E8%87%AA%E8%90%A5/">月饼自营</a>
+                                <a name="public0_RSC_无糖月饼_5-500521" target="_blank" sa-data="{'eletp':'hotkeyword'}" href="http://search.suning.com/%E6%97%A0%E7%B3%96%E6%9C%88%E9%A5%BC/">无糖月饼</a>
+                                <a name="public0_RSC_中秋月饼_6-500521" target="_blank" sa-data="{'eletp':'hotkeyword'}" href="http://search.suning.com/%E4%B8%AD%E7%A7%8B%E6%9C%88%E9%A5%BC/">中秋月饼</a>
+                            </div>
+                        </form>
+                        <div id="ac_results" class="g-ac-results hide" style="display: none;"></div>
+                    </div>
+                    <div class="g-logo" id="G_SUNING_LOGO">
+                        <!-- LOGO -->
+                        <a href="http://www.suning.com" class="ng-logo" sap-expo="true">
+                            <img src="//res.suning.cn/public/v3/images/logo/snlogo.png?v=2020080303" height="90" width="190" alt="苏宁易购">
+                        </a>
+                    </div>
+                    <div class="storname">
+                        <div class="JS_storename changeh3 shop-icon" style="overflow:inherit">
+                            <i><a id="chead_indexUrl" href="//xstzyd.suning.com" title="铁军师专营店"><strong style="color: black;">铁军师专营店</strong></a></i>
+                            <!--<a href="javascript:void(0);" class="icon_exp" title="支持门店试穿服务" style="display:none;" id="guideShopLogo">体验店</a>-->
+                            <!--<a href="javascript:void(0);" class="icon_exp" title="广东馆" style="display:none;" id="gdShopMark">体验店</a> -->
+                            <span class="icon_ic" id="gdShopSpan" style="display: none;"><i title="" id="gdShopMark"></i></span>
+                        </div>
+                        <div class="bd clearfix">
+                            <div class="JS_store_grade store-grade">
+                                <h4 id="chead_road" class="shop-star-h4" style="background-image: none;">
+                                    <span>服务体验</span>
+                                    <em class="shop-star-em">
+            <div class="shop-start-box"><div class="shop-start-full"></div><div class="shop-start-full"></div><div class="shop-start-full"></div><div class="shop-start-full"></div><div class="shop-start-empty"></div></div>
+            <img id="chead_roadPic" src="//ssr.suning.cn/resource/sfs/project/shopv2/common/css/images/juhua.gif" style="display: none;">
+            </em>
+                                </h4>
+                                <div class="sg-details" style="display: none;">
+                                    <div class="clearfix">
+                                        <div class="com-grade">
+                                            <div class="hd clearfix"><span class="l">店铺评分</span><span class="r">与同行业相比</span></div>
+                                            <p><span id="chead_qualityStar"><span>用户评价：</span><span style="color:#FF7000;">9.10</span></span><span class="shop-star-percent"><em class="percent-grey">低于同行13.44%</em></span></p>
+                                            <p><span id="chead_attitudeStar"><span>物流时效：</span><span style="color:#FF7000;">8.89</span></span><span class="shop-star-percent"><em class="percent-orange">高于同行4.95%</em></span></p>
+                                            <p><span id="chead_deliverySpeedStar"><span>售后服务：</span><span style="color:#FF7000;">9.70</span></span><span class="shop-star-percent"><em class="percent-orange">高于同行33.95%</em></span></p>
+                                        </div>
+                                        <div class="store-logo" id="chead_logoUrl"><img src="//image.suning.cn/uimg/cshop/logo/000000000070210713.jpg_300w_300h?1523702630034"></div>
+                                    </div>
+                                    <ul class="store_contact">
+                                        <li id="id_qual_li">
+                                            <span class="dt">行业资质：</span>
+                                            <span class="dd JS_txtCtrl">
+            <a id="chead_qualification" href="//xstzyd.suning.com/showQualification.html" class="chead_qualification" target="_blank"></a>
+            </span>
+                                        </li>
+                                        <li>
+                                            <span class="dt">服务承诺：</span>
+                                            <span class="dd">
+            <i class="zp">正品保障</i>
+            </span>
+                                        </li>
+                                        <li><span class="dt">公司名称：</span><span class="dd JS_txtCtrl"><i id="chead_companyName">广州铁军师电子科技有限公司</i><a id="chead_licence" href="//xstzyd.suning.com/showLicence.html" class="com_licence" target="_blank"></a></span></li>
+                                        <li><span class="dt">所 在 地：</span><span class="dd JS_txtCtrl"><i id="chead_companyAddress">广东,广州市</i></span></li>
+                                        <li style="display: none;"><span class="dt">客服电话：</span><span class="dd" id="chead_telPhone"></span></li>
+                                    </ul>
+                                    <div class="h-exp clearfix" style="display:none;" id="guidShopLogoPlay"><a href="javascript:void(0);" class="btn-exp JS-nearby-store" title="身边门店" style="display:none;" id="guideShopLogo">体验店</a></div>
+                                    <!--<a href="javascript:void(0);" class="icon_exp" title="广东馆" style="display:none;" id="gdShopMark">体验店</a> -->
+                                    <!--<span class="icon_ic" id="gdShopSpan"><i title="南京青奥馆" id="gdShopMark">南京青奥馆</i></span>-->
+                                    <div class="ft clearfix">
+                                        <a id="chead_shopIndexUrl" sa-uv="head_in" href="//xstzyd.suning.com" class="btn btn_home">进入店铺</a>
+                                        <a href="javascript:void(0)" sa-uv="head_col" class="btn btn_collect" id="storeShop3" name="SHOP_70210713_XXTT_SCAN">关注店铺</a>
+                                        <a href="//shop.suning.com/70210713/all.html" sa-uv="head_map" class="btn btn_good">商品地图</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="online-sale" href="javascript:void(0)" id="onlineService1" sa-uv="header_online" ignore-page="true" sap-expo="true"><img style="vertical-align:middle;width:69px;height:18px;" src="//talk8.suning.com/project/yunxin/images/online.gif?_t=1599096927334" alt="和我联系"></a>
+                            <a href="javascript:void(0);" class="JS-nearby-store nearby_store" style="display:none;" id="guideShopAround">身边门店</a>
+                        </div>
+                    </div>
+                    <div class="JS-sf-trytoShop" style="display: none;">
+                        <div class="sf-trytoShop">
+                            <dl class="sf-area clearfix">
+                                <dt>区域：</dt>
+                                <dd class="districtContainer">
+                                    <a href="#" pguide-area="null">全部</a>
+                                </dd>
+                            </dl>
+                            <div class="sf-shopadd">
+                                <table class="sf-table">
+                                    <tbody class="storeListContainer">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div style="position: absolute; height: 150px; width: 1349px; line-height: auto; margin: 0; overflow: hidden; display: block; background: url('//image.suning.cn/uimg/sop/commodity/443666843268978939782090_x.jpg') no-repeat -300px 0px; left:0px; top:20px; z-index: 3;"
+                class="img_0_33915700_1555212736 sn-simple-logo jgabs"><img style="width: 0px; height: 150px;" alt="" class="lazy-loading" src="//ssr.suning.cn/shts/ds/editor/3372624df78a454d8f50502e78255ec5/images/2db4c330b0c646c6a607ab4e049234f3.gif"></div>
+        </div>
+
+
+    </header>
+    <div class="bodyer">
+
+    </div>
+
+</body>
+
+</html>

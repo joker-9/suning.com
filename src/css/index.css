@@ -403,33 +403,114 @@ section .banner .banner-inner-imag {
 section .banner .banner-inner-imag a {
   display: block;
 }
-section .floor {
+section .floor-wraper {
+  background-color: #f2f2f2;
+  padding-top: 1px;
+}
+section .floor-wraper .floor-wrap {
   width: 1190px;
-  margin: 10px auto 0!important;
+  height: 298px;
+  margin: 10px auto 0;
 }
-section .floor img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  margin: 0 10px 10px 10px;
-  border-radius: 6px;
-}
-section .floor .little-area {
-  float: left;
+section .floor-wraper .floor-wrap .floor-wrap-elm {
   width: 590px;
   height: 298px;
-  background: #f20;
-  border-radius: 12px;
-  background: #fff;
+  background-color: white;
+  border-radius: 15px;
+  float: left;
 }
-section .floor .little-area .title {
-  width: 100%;
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header {
   height: 60px;
-  background: #fff;
-  text-align: center;
-  font-size: 24px;
+  width: 590px;
+  float: left;
+  position: relative;
 }
-section .floor .con-list p.title {
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header a {
+  display: block;
+  margin-top: 15px;
+  margin-left: 16px;
+  height: 30px;
+  width: 106px;
+  overflow: hidden;
+  position: relative;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header a img {
+  position: absolute;
+  top: -23px;
+  left: -57px;
+  transform: scale(0.5);
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header .floor-wrap-elm-header-time {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  width: 170px;
+  line-height: 60px;
+  font-size: 16px;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header .floor-wrap-elm-header-time span {
+  float: right;
+  height: 24px;
+  width: 24px;
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 18px;
+  margin-left: 7px;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header .floor-wrap-elm-header-time span:not(:last-child):after {
+  content: ':';
+  position: relative;
+  top: -21px;
+  left: -6px;
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header .floor-wrap-elm-header-time span::before {
+  content: '00';
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: -1px;
+  margin-left: 2px ;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header ul li {
+  position: relative;
+  top: -28px;
+  width: 76px;
+  height: 24px;
+  border: 1px solid red;
+  float: right;
+  margin-left: 0;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header ul li:last-child {
+  background-color: red;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-header ul li:first-child {
+  margin-right: 7px;
+  color: red;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li {
+  width: 170px;
+  float: left;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li:first-child {
+  margin-left: 15px;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li:not(:last-child) {
+  margin-right: 25px;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li img {
+  margin: 0 10px 10px;
+  height: 150px;
+  width: 150px;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li .img-title {
   width: 170px;
   height: 20px;
   color: #333;
@@ -440,10 +521,21 @@ section .floor .con-list p.title {
   word-break: break-all;
   font-weight: normal;
 }
-section .floor .icon {
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li .price-box {
+  height: 21px;
+  margin: 4px 4px 4px 0;
+  overflow: hidden;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li .price-box .price {
   float: left;
-  width: 54px;
-  height: 18px;
-  margin: 2px 5px 0 0;
-  border-radius: 0;
+  line-height: 21px;
+  color: #F30;
+  font-size: 18px;
+  font-weight: bold;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm .floor-wrap-elm-ul li .price-box .price i {
+  font-size: 12px;
+}
+section .floor-wraper .floor-wrap .floor-wrap-elm-rt {
+  float: right;
 }
